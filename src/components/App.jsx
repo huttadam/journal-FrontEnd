@@ -11,11 +11,11 @@ const App = () => {
     const [entries, setEntries] = useState([])
 
     useEffect(() => {
-        fetch("http://localhost:4001/categories")
+        fetch("https://journal-api-huttadam.onrender.com/categories")
             .then((res) => res.json())
             .then((data) => setCategories(data))
 
-        fetch("http://localhost:4001/entries")
+        fetch("https://journal-api-huttadam.onrender.com/entries")
             .then((res) => res.json())
             .then((data) => setEntries(data))
     }, [])
