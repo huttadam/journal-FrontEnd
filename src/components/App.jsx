@@ -28,7 +28,7 @@ const App = () => {
             content: content,
         }
         // POST new entry to API
-        const res = await fetch('http://localhost:4001/entries', {
+        const res = await fetch("https://journal-api-huttadam.onrender.com/entries", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
